@@ -1,0 +1,49 @@
+**Beamforming & Massive MIMO**
+
+Massive MIMO and beamforming terms are used interchangeably.
+
+MIMO technique suitable for wireless channels with lot of signal scattering.
+
+![mimoandbeamforming](https://github.com/user-attachments/assets/675a75af-249c-4b48-87ca-72029f99aaae)
+
+8x8 mimo means 8 transmit antennas and 8 reciever antennas on UE.
+
+A device can have both MIMO and beamforming service simultaneously.
+
+![MIMO+beamforming](https://github.com/user-attachments/assets/139d87bc-3ba1-4bf2-adc9-ad39d7032290)
+
+In above picture we can see that many antenna elements are used for single UE,
+in beamforming a narrow beam can be sent out to UEs.
+
+**How 3D Beamforming Works**
+
+By changin Amplitude and Phase of RF signal in transmitter we can send the beam into any direction in the 3D plane
+
+![3dbeamforming](https://github.com/user-attachments/assets/262e6c58-65db-4509-83e0-d0dbb45d84e7)
+
+**Change in Antenna Upon Change in Frequency**
+
+For 3GHz signal we have large patch which can capture and transmit larger amounts of data from and to UE, Now for 30 GHz(or for mmwave-6Ghz+ concept is same) signal we have much smaller size.
+
+To solve this problem we combine large number of these 30 ghz patches into large block
+
+![antennasizes](https://github.com/user-attachments/assets/6942ede8-90ce-431d-911b-0319a16ba11e)
+
+## Next Gen Node B
+
+**GnodeB Functions**
+
+Signal from UE is decrypted at gnodeb, data from gnode to UE also needs to compressed so that it occupies less bandwidth in the air interface.
+
+Access Stratum signaling is when UE needs to access GnodeB
+
+Non-Access Stratum signaling happens when UE needs to contact core network.
+
+![gnodebfucntions](https://github.com/user-attachments/assets/20d05d36-d826-4c24-be75-60aaf9146a6a)
+
+GnodeB also manages what resources(power,bandwidth) are to be allocated to a signal(radio resource management).
+
+Communications with core network and nearby cells also needs to be done by gnodeb
+
+
+
