@@ -1,0 +1,72 @@
+## 5G Architecture
+
+![5garchitecture](https://github.com/user-attachments/assets/a824feba-f9ea-4632-a89c-329aa90bd6d2)
+
+5g is a completely IP based service, that is all data transferred and read is done through packets.
+
+**Non Standalone Architecture and Standalone Architecture**
+
+![deploymentoptions](https://github.com/user-attachments/assets/40df25b2-620f-4c7a-99e7-1cf7522eef7c)
+
+4G ran acts as master in NSA, UE recieves control signalling and data from master but only data from secondary.
+
+![dualconnectivity](https://github.com/user-attachments/assets/6e933d65-2f59-421f-ad3d-20a973341542)
+
+**Small Cells**
+
+![smalcells](https://github.com/user-attachments/assets/200af870-b087-4ad6-9bfc-523e44e6b4fc)
+
+acts as a mini gnodeb(has small size but compromises range for connectivity) and is secondary to the main gnodeb, it is used to mainly boost data rates.
+
+**Increased spectrum in 5G**
+
+![spectrumincrease](https://github.com/user-attachments/assets/d3a7d0db-2933-4741-82a7-2ed53cc246d2)
+
+As range and building penetration of a given 5G signal increases, data rate decreases.
+
+**Flexible Numerology and OFDM**
+
+OFDM works between the UE and the gnodeb.
+
+
+
+As frequency of signal increases, there may be interference from other signals, to fix this we have scalable carrier spacing which means the spacing between peaks of any two signals(see below picture)
+to avoid interference, in LTE this was 15 KHz.
+
+![signalpeaks](https://github.com/user-attachments/assets/ec3e48f2-f222-4dac-b726-fa2cfe2d1c1f)
+
+This divides the signals into slots(frames), as we increase the frequency of signal, the time between slots decreases(inverse relation)
+
+
+![flexibleslotdivision](https://github.com/user-attachments/assets/f46c7275-f851-4b97-a695-8b8f549bdb5b)
+
+![frames](https://github.com/user-attachments/assets/9bcdc580-306a-4eea-85f1-f2f9f454ef07)
+
+**Resource Block and Resource Element**
+
+
+![resoruceblcok](https://github.com/user-attachments/assets/51f2c910-2d4c-405e-8ae7-4d93f04b2f2b)
+
+![resourceelement](https://github.com/user-attachments/assets/0758cd3f-584c-422b-8cd3-9ae7b8bcdd52)
+
+**Modulation Schemes in 5G**
+
+![modulationschems](https://github.com/user-attachments/assets/63b4f314-e126-4aa3-b230-26c3108a9cab)
+
+256 QAM provides 8 bits/symbol(very high) but can only work in good channel conditions. 64 and 16 QAM provide 6 bits and 4 bits/symbol but are more suited for bad channel conditions.
+
+**CRAN(Cloud RAN)**
+
+![cloudranfeatures](https://github.com/user-attachments/assets/42cae2ca-538d-4c12-bb7f-729f631ae602)
+
+Centralized Unit(CU)- Does more demanding tasks(scheduling,security,power management)
+
+Distributed Unit(DU)-can only transmit/recieve signals
+
+
+
+
+
+
+
+
